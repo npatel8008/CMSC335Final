@@ -3,7 +3,7 @@ const fs = require("fs");
 const express = require("express"); /* Accessing express module */
 const app = express(); /* app is a request handler function */
 const bodyParser = require("body-parser"); /* To handle post parameters */
-const portNumber = process.env.PORT || 5000;
+const portNumber = process.env.PORT || 4000;
 require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 const uri = process.env.MONGO_CONNECTION_STRING;
 const databaseAndCollection = {
