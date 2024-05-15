@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie Information</title>
+    <style>
+        html {
+            font-size: 14px;
+            background-size: cover;
+            background-position: center center;
+            margin-left: 25rem;
+            margin-right: 25rem;
+        }
+
+        body {
+            text-align: center;
+            border: 0.5rem solid black; /* Adjust the thickness of the frame */
+            background-color: white;
+            margin-top: 10rem;
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            color:Purple;
+            font-size: 3rem;
+        }
+
+        #text{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+	<h1><%- activity %></h1>
+	<div id = "text">
+        <strong>Activity: </strong><%- activity %><br>
+        <strong>Category: </strong><%- category %><br>
+	</div>
+    <br>
+    <a href="/">HOME</a>
+
+
+</body>
+
+</html>

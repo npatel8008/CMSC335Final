@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>My Activity List</title>
+    <style>
+        html {
+            font-size: 14px;
+            background-size: cover;
+            background-position: center center;
+            margin-left: 25rem;
+            margin-right: 25rem;
+        }
+
+        body {
+            text-align: center;
+            border: 0.5rem solid black; /* Adjust the thickness of the frame */
+            background-color: white;
+            margin-top: 10rem;
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            color:Purple;
+        }
+
+        #table{
+            text-align: center;
+            padding-left: 23rem;
+        }
+    </style>
+</head>
+
+<body>
+	<h1>My Activity List: </h1>
+	<div id = "table">
+		<%- activityTable %>
+	</div>
+    <br>
+    <a href="/">HOME</a>
+
+
+</body>
+
+</html>

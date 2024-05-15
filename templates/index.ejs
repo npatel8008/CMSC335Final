@@ -1,0 +1,50 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Activity Finder to Cure Boredom</title>
+    <style>
+        html {
+            font-size: 14px;
+            background-size: cover;
+            background-position: center center;
+            margin-left: 25rem;
+            margin-right: 25rem;
+        }
+
+        body {
+            text-align: center;
+            border: 0.5rem solid black; /* Adjust the thickness of the frame */
+            background-color: white;
+            margin-top: 10rem;
+        }
+
+        h1 {
+            color:Purple;
+        }
+    </style>
+</head>
+
+<body>
+	<h1>Welcome to The Activity Finder</h1>
+    <hr>
+    <h2>Find Random Activity</h2>
+    <form action="http://localhost:5000/getCategory" method="post" id="submission">
+		<input type="submit" value="Generate Random Activity"/>
+    </form>
+    <hr>
+    <h2>Add Activity To List</h2>
+    <form action="http://localhost:5000/activityList" method="post" id="submission">
+        <fieldset>
+			<label><strong>Activity Name:</strong> <input type="text" name="name" required/></label>
+            <label><strong>When to Complete:</strong> <input type="text" name="time" required/></label>
+		</fieldset>
+        <br>
+		<input type="submit" value="Add Activity"/>
+    </form>
+    <hr>
+</body>
+
+</html>
